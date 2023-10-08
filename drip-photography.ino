@@ -9,18 +9,17 @@
  * make a double water drip. 
  * The values below are for a drip height of 44cm from bottom of 
  * valve to surface of water
+ https://petapixel.com/2016/06/04/build-diy-double-water-drip-system-high-speed-photos/
  */
 
-const int flashPin = 3;  // Set flash to pin 3 controls the opto-isolator 
+const int flashPin = 8;  // Set flash to pin 3 controls the opto-isolator 
 const int StartButton = 7; // Set push button to pin 7 this will be an input from a switch
-const int DripValve = 8;  // Set valve to pin 8 connects to a reed switch which 
-           			// controls the solenoid valve 
+const int DripValve = 9;  // Set valve to pin 8 connects to a reed switch which controls the solenoid valve 
 int buttonState = HIGH;
 
 int ValveOpen = 95;  // Set a delay variable for time (milliseconds) valve is open
 int ValvePause = 20; // set delay between drips (milliseconds)
-int flashDelay = 290; // Set a delay for flash to be triggered: adjust 
-            		// this for part of collision you want to photograph
+int flashDelay = 290; // Set a delay for flash to be triggered: adjust this for part of collision you want to photograph
  
 void setup() {
  
